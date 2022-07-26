@@ -1,0 +1,155 @@
+/*Inicio*/
+a{text-decoration: none; }
+
+ *{background-color: ivory;
+margin: 0; 
+padding: 0;}
+
+ header{display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;}
+
+ .logo{
+   display: flex;
+   align-items: center;}
+ 
+
+ .logo img{ height: 100px;}
+
+ .lista-navegacion li{
+   list-style: none;
+   display: inline-block;
+   margin-right: 40px;
+   color: black;}
+ 
+ .color-naranja{color: rgb(225, 108, 25);}
+
+ .fuente-grande{font-size: larger;
+    font-family: 'Nunito Sans', sans-serif;}
+ 
+ .negrita{font-weight: 500;}
+
+ .imagenPrincipal{padding-left: 30px;}
+ 
+
+ h1{
+   color: darkslateblue; 
+   font-size: 100px;}
+
+ h2{
+   color: darkslateblue; 
+   font-size: 50px;}
+
+ body{position: relative;}
+
+ footer{list-style: none
+   
+}
+  
+ 
+
+
+
+
+/*Clases*/
+ .tituloClases{
+   color: navy; 
+   font-size:xx-large; 
+   font-style: normal; 
+   display: contents ;}
+
+ .horarios{
+   color: orangered;
+   font-style: normal;
+   font-size: large;
+   align-items: center;}
+
+   .diasClases{ 
+      color: darkblue;
+      align-items: flex-start;
+      font-size: xx-large;}
+
+
+/*Contacto*/
+
+ .container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.container-form .contacto-h2 {
+   margin-bottom: 15px;
+   font-size: 35px;
+}
+.container-form p {
+   font-size: 17px;
+   line-height: 1.6;
+   margin-bottom: 30px;
+}
+
+.container-form form .campo textarea{
+   width: 100%;
+   padding: 15px 10px;
+   font-size: 15px;
+   border: 1px solid navy;
+   margin-bottom: 20px;
+   border-radius: 3px;
+   outline: 0px;
+   
+
+}
+
+ .tituloC{color: navy; font-size:xx-large; font-style: normal; display: contents ;}
+
+ .lista-navegacion{color: navy; }
+
+/*Fotos*/
+
+ .tituloF{color: navy; font-size:xx-large; font-style: normal; display: contents ;}
+
+ .imagenesFotos{padding-left: 30px;
+max-width: 1100px; 
+margin: 0 auto;
+display: grid;
+grid-gap: 10px; 
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr)  );
+grid-auto-rows: 250px;
+grid-auto-flow: dense;
+}
+.v-strech{
+  grid-row: span 2;
+}
+
+.h-strech{
+  grid-column: span 2 ;
+}
+.big-strech{
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.imagenesFotos div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width 560px)
+{.v-strech{grid-row: span 1;}
+ .h-strech{grid-column: span 1;}
+ .big-strech{grid-column: span 1;
+             grid-row: span 1;}
+}
+
+/*Nosotros*/
+
+ .tituloN{align-items: center;
+color: navy;} 
+
+.textoN{ color: orangered; 
+font-style: normal;
+font-size: large;
+align-items: center;}
